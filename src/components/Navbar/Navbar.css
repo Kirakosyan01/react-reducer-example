@@ -1,6 +1,15 @@
 nav {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  align-self: center;
+  z-index: 999;
+  a{
+    text-decoration: none;
+  }
 }
 .color_div {
   background-color: #f0edf6;
@@ -16,14 +25,10 @@ nav {
   padding-bottom: 5px;
   a {
     padding: 10px 20px 0 20px;
-    text-decoration: none;
     font-weight: 500;
 }
 }
 .nav_div {
-  margin-top: 20px;
-  position: sticky;
-  top: 0;
   border-radius: 20px;
   background-color: #ffffff;
   max-width: 350px;
@@ -31,6 +36,10 @@ nav {
 }
 .homeIcon {
     border-top: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        border-color: #9730F9;
+    }
     svg {
         width: 30px;
         height: 30px;
@@ -42,6 +51,10 @@ nav {
 }
 .usersIcon {
     border-top: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        border-color: #9730F9;
+    }
     svg {
         width: 30px;
         height: 30px;
@@ -53,6 +66,10 @@ nav {
 }
 .productsIcon {
     border-top: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        border-color: #9730F9;
+    }
     svg {
         width: 30px;
         height: 30px;

@@ -4,8 +4,11 @@
   box-sizing: border-box;
 }
 .App{
+  display: flex;
+  flex-direction: column;
   width: 100%;
   min-height: 100vh;
   text-align: center;
   background-color: #B066FA;
+  scroll-behavior: smooth;
 }

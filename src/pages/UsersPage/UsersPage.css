@@ -1,0 +1,45 @@
+.users_section{
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 80px;
+    column-gap: 40px;
+}
+.user_div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    padding-top: 90px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    position: relative;
+    span{
+        font-weight: 500;
+    }
+}
+.imgBx{
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+.deleteIcon{
+    width: 28px;
+    height: 28px;
+}
+.deleteBtn{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

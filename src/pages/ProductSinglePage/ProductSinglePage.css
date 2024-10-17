@@ -1,0 +1,60 @@
+.product_profile{
+    align-self: center;
+    background-color: #fff;
+    padding: 20px;
+    width: 800px;
+    border-radius: 10px;
+    height: auto;
+    margin-bottom: 50px;
+    img{
+        width: 200px;
+        margin-bottom: 20px;
+    }
+}
+.product_form{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    input{
+        border: 1px solid #c5c5c5;
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    label{
+        font-weight: 500;
+    }
+}
+.saveButton{
+    margin-top: 20px;
+    max-width: 100px;
+    color: #fff;
+    padding: 8px 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #B066FA;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        background-color: #c186fc;
+    }
+}
+.backButton{
+margin-left: 20px;
+color: black;
+padding: 8px 10px;
+border: none;
+font-size: 18px;
+font-weight: 500;
+cursor: pointer;
+border-radius: 6px;
+background-color: #e2e1e4;
+transition: all 0.2s ease-in-out;
+&:hover{
+    background-color: #bfbdc0;
+}
+}
