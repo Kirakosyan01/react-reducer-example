@@ -91,10 +91,25 @@ export default function AppRouter() {
           ...state,
           productsData: state.productsData.sort((a, b) => a.rating.rate - b.rating.rate),
         };
-      case "sortUsersByPrice":
+      case "sortUsersByAge":
         return {
           ...state,
           usersData: state.usersData.sort((a, b) => a.dob.age - b.dob.age)
+        }
+      case "sortUsersByAgeToDown":
+        return {
+          ...state,
+          usersData: state.usersData.sort((a, b) => b.dob.age - a.dob.age)
+        }
+      case "sortProductsByPriceToDown":
+        return {
+          ...state,
+          productsData: state.productsData.sort((a, b) => b.price - a.price),
+        }
+      case "sortProductsByRatingToDown":
+        return {
+          ...state,
+          productsData: state.productsData.sort((a, b) => b.rating.rate - a.rating.rate),
         }
       default:
         return state;

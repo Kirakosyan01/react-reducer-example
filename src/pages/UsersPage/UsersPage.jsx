@@ -10,7 +10,8 @@ export default function UsersPage({ usersData, dispatch }) {
     <AnimationPageUsers>
     <section className="users_section">
     <div className="filterDiv">
-        <button onClick={() => dispatch({type: "sortUsersByPrice"})} className="priceFilter">By Age</button>
+        <button onClick={() => dispatch({type: "sortUsersByAge"})} className="priceFilter">By Age <span>&#8593;</span></button>
+        <button onClick={() => dispatch({type: "sortUsersByAgeToDown"})} className="priceFilter">By Age <span>&#8595;</span></button>
     </div>
       {usersData.map((user) => {
         return (

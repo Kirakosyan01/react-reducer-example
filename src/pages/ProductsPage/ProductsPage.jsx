@@ -11,8 +11,10 @@ export default function ProductsPage({ productsData, dispatch }) {
     <AnimationPageProducts>
       <section className="products_section">
         <div className="filterDiv">
-        <button onClick={() => dispatch({type: "sortProductsByPrice"})} className="priceFilter">By Price</button>
-        <button onClick={() => dispatch({type: "sortProductsByRating"})} className="ratingFilter">By Rating</button>
+        <button onClick={() => dispatch({type: "sortProductsByPrice"})} className="priceFilter">By Price <span>&#8593;</span></button>
+        <button onClick={() => dispatch({type: "sortProductsByPriceToDown"})} className="priceFilter">By Price <span>&#8595;</span></button>
+        <button onClick={() => dispatch({type: "sortProductsByRating"})} className="priceFilter">By Rating <span>&#8593;</span></button>
+        <button onClick={() => dispatch({type: "sortProductsByRatingToDown"})} className="priceFilter">By Rating <span>&#8595;</span></button>
         </div>
         {productsData.map((product) => {
           return (

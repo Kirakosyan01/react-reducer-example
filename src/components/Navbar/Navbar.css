@@ -4,7 +4,7 @@ nav {
   justify-content: center;
   margin-bottom: 20px;
   position: sticky;
-  top: 0;
+  top: 1%;
   align-self: center;
   z-index: 999;
   a{
@@ -29,6 +29,7 @@ nav {
 }
 }
 .nav_div {
+  border: 1px solid #B066FA;
   border-radius: 20px;
   background-color: #ffffff;
   max-width: 350px;
